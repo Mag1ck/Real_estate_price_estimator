@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>AI Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Area</h2>
+    <input class="area"  type="text" id="uiarea" class="floatLabel" name="Area" value="60">
+    <h2>Rent</h2>
+    <input class="area"  type="text" id="rent" class="floatLabel" name="rent" value="100">
+	<h2>Building Ownership</h2>
+	<select id="building_ownership" name="building_ownership">
+    <option value="1">Pełna własność</option>
+    <option value="2" selected>spółdzielcze wł. prawo do lokalu</option>
+    <option value="3">użytkowanie wieczyste / dzierżawa</option>
+    <option value="4">udział</option>
+	</select>
+	<h2>Construction status</h2>
+
+	<select id="construction_status" name="construction_status">
+		<option value="1">Do zamieszkania</option>
+	<option value="2" selected>Do wykończenia</option>
+	<option value="3">Do remontu</option>
+		</select>
+
+	<h2>Outdoor</h2>
+
+	<select id="Outdoor" name="Outdoor">
+		<option value="1">Balkon</option>
+	<option value="2" selected>ogródek</option>
+	<option value="3">balkon,taras</option>
+	<option value="4">taras</option>
+	<option value="5">ogródek, taras</option>
+	<option value="6">balkon, ogródek, taras</option>
+	<option value="7">balkon, ogródek</option>
+	<option value="8">taras, ogródek</option>
+	<option value="9">taras, balkon</option>
+	<option value="10">ogródek, balkon</option>
+		</select>
+
+	<h2>Heating</h2>
+
+	<select id="Heating" name="Heating">
+		<option value="1">Miejskie</option>
+	<option value="2" selected>Gazowe</option>
+	<option value="3">Inne</option>
+	<option value="4">Kotłownia</option>
+	<option value="5">elektryczne</option>
+	<option value="6">piece kaflowe</option>
+		</select>
+
+	<h2>floor</h2>
+
+	<input class="floor"  type="text" id="uifloor" class="floatLabel" name="uifloor" value="2/3">
+
+	<h2>car</h2>
+
+	<select id="car" name="car">
+		<option value="1">garaż/miejsce parkingowe</option>
+	<option value="0" selected>Brak</option>
+		</select>
+
+	<h2>Rooms</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-room-1" name="uiRooms" value="1"/>
+		<label for="radio-room-1">1</label>
+		<input type="radio" id="radio-room-2" name="uiRooms" value="2" checked/>
+		<label for="radio-room-2">2</label>
+		<input type="radio" id="radio-room-3" name="uiRooms" value="3"/>
+		<label for="radio-room-3">3</label>
+		<input type="radio" id="radio-room-4" name="uiRooms" value="4"/>
+		<label for="radio-room-4">4</label>
+		<input type="radio" id="radio-room-5" name="uiRooms" value="5"/>
+		<label for="radio-room-5">5</label>
+		<input type="radio" id="radio-room-6" name="uiRooms" value="6"/>
+		<label for="radio-room-6">6</label>
+		<input type="radio" id="radio-room-7" name="uiRooms" value="7"/>
+		<label for="radio-room-7">7</label>
+		<input type="radio" id="radio-room-8" name="uiRooms" value="8"/>
+		<label for="radio-room-8">8</label>
+		<input type="radio" id="radio-room-9" name="uiRooms" value="9"/>
+		<label for="radio-room-9">9</label>
+		<input type="radio" id="radio-room-10" name="uiRooms" value="10"/>
+		<label for="radio-room-10">10</label>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+		</form>
+</body>
+
+</html>
