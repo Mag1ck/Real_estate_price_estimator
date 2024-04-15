@@ -20,3 +20,5 @@ To use this project, you can call the `predict_price` function with the desired 
 
 ```python
 predict_price('Targówek', 44.0, 2.0,0.5,200.0,1.0,1.0,1.0,1.0,1.0)
+
+predict_price('Bemowo' , 30,2,1,20,1,1,1,1,1)
