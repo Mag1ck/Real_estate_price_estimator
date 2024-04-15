@@ -10,7 +10,7 @@ To install and run this project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Mag1ck/Predict_house_prices.git`
 2. Install the required packages: `pip install -r requirements.txt`
-3. Run the main script: `python main.py`
+3. Run the main script: `main.html`
 
 ## Usage
 
