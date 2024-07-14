@@ -1,24 +1,55 @@
 # CV Project
 
-## Description
+## Real Estate Price Estimator
 
-This project is a machine learning model that predicts house prices based on various features. The model is trained on a dataset of house listings from Warsaw, Poland.
+Real Estate Price Estimator is a machine learning project that predicts the prices of real estate properties based on various features. The project uses Python and popular data science libraries to build and evaluate the predictive model.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+## Features
+
+- **Data preprocessing** for real estate datasets
+- **Feature engineering** to extract meaningful features
+- **Machine learning model** to predict property prices
+- **Model evaluation** and performance metrics
 
 ## Installation
 
-To install and run this project, follow these steps:
+### Prerequisites
 
-1. Clone the repository: `git clone https://github.com/Mag1ck/Predict_house_prices.git`
-2. Install the required packages: `pip install -r requirements.txt`
-3. Run the main script: `main.html`
+- **Python 3.x**
+- **pip (Python package installer)**
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Mag1ck/Real_estate_price_estimator.git
+cd Real_estate_price_estimator
+```
+
+### Set Up a Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-Fetch data using 'fetch_data.py' and 'fetch_links.py'
+### Data Preparation
 
-To use this project, you can call the `predict_price` function with the desired parameters. For example:
+- **Load your dataset** into the **data.csv** or use fetch_links then fetch_data to get new data from Otodom.pl.
 
-```python
-predict_price('Targówek', 44.0, 2.0,0.5,200.0,1.0,1.0,1.0,1.0,1.0)
+### Training model, Making predicitions and evaluating the model
 
-predict_price('Bemowo' , 30,2,1,20,1,1,1,1,1)
+- **Run untitled.ipynb** you can modify whole background code to set it to your preferences, there are also plots including distribution of price per square foot and prices on "Ursus" state (you can modify everything and set to your preferences)
+
+### Using the server
+
+- **cd** to **/server/** and run **server.py**
